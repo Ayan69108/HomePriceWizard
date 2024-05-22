@@ -1,0 +1,169 @@
+/* Existing Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    position: fixed; /* Fixed header */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+section {
+    min-height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px; /* Account for fixed header */
+    text-align: center;
+}
+
+#hero {
+    background: url('pexels-heyho-7031407.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* About Section Styles */
+#about {
+    background: #ffffff;
+}
+
+#about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#about-content h2 {
+    color: #35424a;
+    margin-bottom: 20px;
+}
+
+#about-content p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Contact Section Styles */
+#contact {
+    background: #f4f4f4;
+}
+
+#contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#contact-content h2 {
+    color: #35424a;
+    margin-bottom: 20px;
+}
+
+#contact-content p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+#contact-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-content input, #contact-content textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact-content button {
+    padding: 10px 20px;
+    color: #ffffff;
+    background: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-content button:hover {
+    background: #35424a;
+}
+
+/* Add animations */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
